@@ -1,4 +1,16 @@
-# Shop Mobile
+{
+  "name": "shop-mobile",
+  "private": false,
+  "workspaces": [
+    "app",
+    "server"
+  ],
+  "scripts": {
+    "dev:app": "npm --workspace app run start",
+    "dev:server": "npm --workspace server run dev",
+    "typecheck": "npm --workspace server run typecheck && npm --workspace app run typecheck"
+  }
+}# Shop Mobile
 
 Monorepo scaffold for a mobile e-commerce app.
 
